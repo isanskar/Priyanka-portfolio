@@ -48,6 +48,7 @@ header{
 h3{
     font-size: 36px;
     font-weight: 700;
+    color: var(--second-bg-color);
 }
 
 .about-section{
@@ -110,6 +111,7 @@ h2{
     justify-content: center;
     margin-left: 10px;
 }
+
 
 /* skills section */
 
@@ -198,12 +200,50 @@ h2{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .project-cards{
-    height: 770px;
+    height: 780px;
+    width: 1320px;
     display: flex;
     gap: 60px;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.projects-section button {
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+    font-size: 45px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.projects-section button:hover{
+    color: var(--bg-color);
+    background-color: var(--second-bg-color);
+}
+
+#prev{
+    left: 50px;
+    top: 590px;
+}
+
+#next{
+    right: 50px;
+    top: 590px;
+}
+
+
+.project-cards::-webkit-scrollbar{
+    display: none;
 }
 
 .card{
@@ -227,7 +267,7 @@ h2{
 
 .project-name{
     height: 160px;
-    width: inherit;
+    width: 100%;
     background-color: #fff;
     border: 1px solid black;
     position: absolute;
@@ -274,11 +314,21 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in;
+}
+
+.btn-container a:hover{
+    box-shadow: 0 0 2px 2px var(--bg-color);
+}
+
+.btn-container a p:hover{
+    font-size: 30px;
 }
 
 .btn-container a p{
     font-size: 27px;
     font-weight: 500;
+    transition: 0.2s ease-in;
 }
 
 .btn-container{
@@ -295,6 +345,13 @@ h2{
     padding: 280px 0 10px;
 }
 
+#go-to-top{
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 120px;
+    border-radius: 20%;
+}
 
 /* Print Design page -------------------------------------------------------------------------------*/
 
