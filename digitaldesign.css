@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    /* cursor: pointer; */
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+:root{
+    --bg-color : #FFFFFF;
+    --second-bg-color : #22223B;
+    --text-color : #4A4E69;
+    /* --main-color : #9a8c98;
+    --btn-color : #4a4e69; */
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+}
+
+header{
+    display: flex;
+    height: 160px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a + a{
+    padding-left: 44px;
+}
+
+.navbar a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--second-bg-color);
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--second-bg-color);
+}
+
+.about-section{
+
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-img img{
+    height: 415px;
+    width: 415px;
+    border-radius: 50%;
+}
+
+.about-content{
+    width: 730px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.about-content h2{
+    font-size: 57px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.about-content p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.resume-link{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.resume-link p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--second-bg-color);
+}
+
+.resume-link img{
+    height: 17px;
+    width: 17px;
+}
+
+.resume-link a{
+    height: 30px;
+    width: 30px;
+    background-color: var(--second-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+/* skills section */
+
+.skills-section{
+    height: 570px;
+    background-color: var(--second-bg-color);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-swipe{
+    display: flex;
+    /* flex-direction: row;
+    padding-top: 60px; */
+    /* gap: 280px; */
+    margin: 100px auto;
+    width: 90%;
+    /* border: 5px solid white; */
+    overflow-x: auto;
+}
+
+.skill-swipe::-webkit-scrollbar {
+    display: none;
+}
+
+.skill-swipe:hover .group {
+  animation-play-state: paused !important;
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: spin 7s infinite linear;
+}
+
+.skills-box{
+    height: 180px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1em;
+    flex: 0 0 280px;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+.skills-box p{
+    font-size: 19px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    /* padding-top: 20px; */
+}
+
+.skill-icon{
+    height: 60px;
+    width: 60px;
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon img{
+    height: 40px;
+    width: 40px;
+}
+
+/* Projects-section */
+
+.projects-section{
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.project-cards{
+    height: 450px;
+    width: 1200px;
+    display: flex;
+    gap: 60px;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.projects-section-button {
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+    font-size: 45px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.projects-section-button:hover{
+    color: var(--bg-color);
+    background-color: var(--second-bg-color);
+}
+
+#prev{
+    left: 50px;
+    top: 590px;
+}
+
+#next{
+    right: 50px;
+    top: 590px;
+}
+
+
+.project-cards::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    height: 445px;
+    width: 360px;
+    border-bottom: none;
+    padding: 0;
+    position: relative;
+    color: var(--second-bg-color);
+}
+
+.project-img-container{
+    height: 440px;
+    width: 360px;
+    border-radius:10%;
+    border: 1px solid black;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img-container img{
+    height: 335px;
+}
+
+#Digital-card img{
+    height: 410px;
+}
+
+#motion-card img{
+    height: 310px;
+    margin-bottom: 75px;
+}
+
+#video-card img{
+    height: 178px;
+    margin-bottom: 75px;
+}
+
+.project-name{
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-name p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* get in touch */
+
+.get-in-touch{
+    height: 1000px;
+    background-color: var(--second-bg-color);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-in-touch h2{
+    padding: 280px 0 70px;
+}
+
+.get-in-touch h5{
+    font-size: 27px;
+    font-weight: 600px;
+}
+
+.btn-container a{
+    height: 70px;
+    width: 290px;
+    border: 1px solid #D9D9D9 ;
+    color: var(--bg-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in;
+    gap: 10px;
+}
+
+.btn-container a:hover{
+    box-shadow: 0 0 2px 2px var(--bg-color);
+}
+
+.btn-container a p:hover{
+    font-size: 22px;
+}
+
+.btn-container a p{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s ease-in;
+}
+
+.btn-container{
+    height: 70px;
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright{
+    font-size: 19px;
+    font-weight: 500;
+    padding: 280px 0 10px;
+}
+
+#go-to-top{
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 120px;
+    border-radius: 20%;
+}
+
+
+
+
+/* ⚠️ WARNING: Hardcoded dimensions and absolute position. 
+   This element's placement is static and will not adapt to different viewports 
+   or content changes. Replace with Flexbox/Grid positioning. */
+   
+/* Print Design page -------------------------------------------------------------------------------*/
+
+/* Pd-heading */
+
+.Pd-heading{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* billboad-container */
+
+.billboad-container-dd{
+    height: 741px;
+    width: 741px;
+    position: relative;
+}
+
+/* .billboard-text-dd{
+    position: absolute;
+    height: 21px;
+    width: 82px;
+    left: 183px;
+    top: 726px;
+} */
+
+.billboad-img-dd{
+    position: absolute;
+    right: -120px;
+    top: -100px;
+}
+
+.billboad-container-dd .pd-para-dd{
+    position: absolute;
+    width: 82px;
+    height: 21px;
+    top: 260px;
+    left: 183px;
+
+
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* line-container */
+
+.line-container-dd{
+    position: relative;
+}
+
+.line-img-dd{
+    position: absolute;
+    height: 5728px;
+    width: 842px;
+    left: 345px;
+    top: 190px;
+}
+
+/* Rectangle 1 container */
+
+.con1 .rect1{
+    position: absolute;
+    width: 280;
+    height: 138;
+    top: 118px;
+    left: 1000px;
+}
+
+.info-box {
+  /* text-align: left; */
+  position: relative;
+  top: 148px;
+  left: 1070px;
+}
+
+.con1 .con1-text{
+    position: absolute;
+    
+    top: 223px;
+    left: 995px;
+}
+
+
+
+/* Interactive pdf */
+
+.interactive-pdf-dd{
+    position: relative;
+    top: 623px;
+    left: 850px;
+}
+
+.interactive-pdf-dd .pd-para-dd{
+    position: relative;
+    top: 650px;
+    white-space: nowrap;
+}
+
+.interactive-frame-dd{
+    width: 500px;
+    max-width: 95%;
+    min-height: 400px;
+    height: 595px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+/* Rectangle 2 container */
+.rect2{
+    position: absolute;
+    left: 405px;
+    top: 1013px;
+}
+
+.con2 .info-box{
+    position: relative;
+    left:474px;
+    top:317px;
+}
+
+/* Container 2 */
+.billboad-img2-dd{
+    position: relative;
+    top: 795px;
+    left: 62px;
+}
+.billboad-container2-dd .pd-para-dd{
+    position: absolute;
+    top: 2100px;
+    left: 400px;
+}
+
+.creative1{
+    position: relative;
+    top: 200px;
+    left: 860px;
+}
+
+
+
+/* Rectangle 3 container */
+.rect3{
+    position: relative;
+    left: 1042px;
+    top: 250px;
+}
+
+.con3 .info-box{
+    position: relative;
+    left: 1110px;
+    top: 135px;
+}
+
+.creative2{
+    position: relative;
+    top: 516px;
+    left: 370px;
+}
+
+/* Rectangle 4 container */
+.rect4{
+    position: relative;
+    left: 224px;
+    top: 947px;
+}
+
+.con4 .info-box{
+    position: relative;
+    left: 305px;
+    top: 833px;
+}
+
+.creative3{
+    position: relative;
+    top: 923px;
+    left: 304px;
+}
+
+.billboad-container3-dd .pd-para-dd{
+    position: relative;
+    top: 1400px;
+    left: 1170px;
+}
+
+/* Rectangle 5 container */
+.rect5{
+    position: relative;
+    left: 1008px;
+    top: 1250px;
+}
+
+.con5 .info-box{
+    position: relative;
+    left: 1068px;
+    top: 1135px;
+}
+
+.creative4{
+    position: relative;
+    top: 1220px;
+    left: 500px;
+}
+
+.billboad-container4-dd .pd-para-dd{
+    position: relative;
+    top: 1370px;
+    left: 500px;
+}
+
+
+/* Rectangle 6 container */
+.rect6{
+    position: relative;
+    left: 243px;
+    top: 1604px;
+}
+
+.con6 .info-box{
+    position: relative;
+    left: 300px;
+    top: 1495px;
+}
+
+.creative5{
+    position:relative;
+    left: 170px;
+    top: 1623px;
+}
+
+.billboad-container5-dd .pd-para-dd{
+    position: relative;
+    left: 1335px;
+    top: 1623px;
+}
+
+
+
+
+/* bobcat-footer */
+.bobcat-footer-error{
+    height: 100px;
+    width: 100vw;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 5900px;
+    /* bottom: 0; */
+}
+
+
