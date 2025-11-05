@@ -26,6 +26,10 @@ body{
     color: var(--second-bg-color);
 }
 
+.container-main{
+    /* padding: 1.5rem 3rem; */
+}
+
 header{
     display: flex;
     height: 160px;
@@ -69,8 +73,15 @@ h3{
     width: 730px;
 }
 
-h4{
+.about-content h4{
     font-size: 30px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+h4{
+    font-size: 20px;
     font-weight: 700;
     color: var(--text-color);
     margin: 0;
@@ -380,13 +391,16 @@ h2{
     bottom: 60px;
     right: 120px;
     border-radius: 20%;
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
 }
 
 /* Print Design page -------------------------------------------------------------------------------*/
 
 /* Pd-heading */
 
-.Pd-heading{
+.heading{
     height: 170px;
     display: flex;
     justify-content: center;
@@ -533,4 +547,24 @@ h2{
     display: flex;
     justify-content: left;
     padding: 0 325px;
+}
+
+
+/* Videos section */
+
+section{
+    padding: 0 12rem;
+}
+
+.video-card{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.video-box{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    margin-top: 4rem;
 }
