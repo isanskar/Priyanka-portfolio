@@ -488,6 +488,16 @@ h2{
     white-space: nowrap;
 }
 
+.interactive-frame-dd{
+    width: 500px;
+    max-width: 95%;
+    min-height: 400px;
+    height: 595px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
 
 
 /* Rectangle 2 container */
