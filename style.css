@@ -235,12 +235,12 @@ h2{
 
 .projects-section-button {
     position:absolute;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: var(--bg-color);
     color: var(--second-bg-color);
-    font-size: 45px;
+    font-size: 26px;
     font-weight: 500;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -560,6 +560,11 @@ section{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    position: relative;
+}
+
+#serta-card{
+    align-items: end;
 }
 
 .video-box{
@@ -567,4 +572,22 @@ section{
     flex-direction: column;
     gap: 12rem;
     margin-top: 4rem;
+    position: relative;
+}
+
+.video-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 6rem 4rem ;
+}
+
+.video-footer p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.line-video{
+    position: absolute;
+    left: 48em;
+    top: 20em;
 }
