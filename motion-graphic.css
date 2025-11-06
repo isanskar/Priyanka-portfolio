@@ -1,0 +1,183 @@
+/* Motion graphic Page */
+.billboad-container-mg{
+    height: 741px;
+    width: 741px;
+    position: relative;
+}
+
+.billboard-text-mg{
+    position: absolute;
+    left: 367px;
+    top: 145px;
+}
+
+.billboad-img-mg{
+    position: absolute;
+    right: -367px;
+    top: 100px;
+}
+
+/* line-container */
+
+.line-container-mg{
+    position: relative;
+}
+
+.line-img-mg{
+     position: absolute;
+    height: 2672px;
+    width: 1082.75px;
+    left: 70px;
+    top: 270px;
+}
+
+/* Component 1 */
+.comp1{
+    height: 780px;
+    position: relative;
+}
+
+.pd-para{
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.comp1 .pd-para{
+    position: absolute;
+    left: 250px;
+    top: 670px;
+}
+
+.comp1 img{
+    position: absolute;
+    left: 777px;
+    height: 563px;
+    top: 1334px;
+}
+
+.comp1img img{
+    position: absolute;
+    left: 506px;
+    height: 812px;
+}
+
+.comp1img1 img{
+    position: absolute;
+    left: 104px;
+    height: 960px;
+}
+
+.billboard-text-mg-comp1{
+    position: absolute;
+    left: 854px;
+    top: 1213px;
+    white-space: nowrap;
+}
+
+/* Component 2 */
+
+.comp2 img{
+    position: absolute;
+    left: 59px;
+    height: 388.87px;
+    top: 2860px;
+}
+
+.comp2img img{
+    position: absolute;
+    left: 419.08px;
+    height: 388.87px;
+}
+
+.comp2gif img{
+    position: absolute;
+    left: 780.01px;
+    height: 388.87px;
+}
+
+.billboard-text-mg-comp2{
+    position: absolute;
+    left: 59pxpx;
+    top: 2734px;
+    white-space: nowrap;
+}
+
+/* line-container 2 */
+
+.line-container-mg-2{
+    position: inherit;
+}
+
+.line-img-mg-2{
+    position: absolute;
+    height: 2017.82px;
+    width: 980.86px;
+    left: 94px;
+    top: 3550px;
+}
+
+/* Component 3 */
+.comp3 img{
+    position: absolute;
+    left: 791px;
+    height: 425px;
+    top: 4006px;
+}
+
+.comp3gif img{
+    position: absolute;
+    left: 428px;
+    height: 354px;
+}
+
+/* Component 4 */
+.comp4 img{
+    position: absolute;
+    left: 414px;
+    height: 339px;
+    top: 4636px;
+}
+
+.comp4gif img{
+    position: absolute;
+    left: 43px;
+    height: 494px;
+}
+
+
+/* Component 5 */
+
+.comp5 img{
+    position: absolute;
+    left: 109px;
+    height: 524px;
+    top: 5406px;
+}
+
+.comp5img img{
+    position: absolute;
+    left: 830px;
+    height: 255px;
+}
+
+.comp5gif img{
+    position: absolute;
+    top: 5683px;
+    left: 831px;
+    height: 388.87px;
+}
+
+
+/* Not ideal */
+.bobcat-footer-errors{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 5300px;
+}
+
