@@ -26,10 +26,6 @@ body{
     color: var(--second-bg-color);
 }
 
-.container-main{
-    /* padding: 1.5rem 3rem; */
-}
-
 header{
     display: flex;
     height: 160px;
@@ -56,11 +52,12 @@ h3{
 }
 
 .about-section{
-
+    padding: 0 15rem;
     height: 800px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 4rem;
 }
 
 .main-img img{
@@ -99,7 +96,7 @@ h2{
 
 .about-content p{
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 450;
     color: var(--text-color);
     margin: 0;
 }
@@ -114,6 +111,33 @@ h2{
     font-size: 20px;
     font-weight: 600;
     color: var(--second-bg-color);
+}
+
+.resume-link-end{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.resume-link-end p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+.resume-link-end a{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: var(--bg-color);
+}
+
+.resume-link-end img{
+    height: 15px;
+    width: 15px;
 }
 
 .resume-link img{
@@ -382,7 +406,7 @@ h2{
 .copyright{
     font-size: 19px;
     font-weight: 500;
-    padding: 280px 0 10px;
+    padding: 260px 0 10px;
 }
 
 #go-to-top{
@@ -410,19 +434,20 @@ h2{
 /* billboad-container */
 
 .billboad-container{
-    height: 1000px;
+    height: 730px;
     position: relative;
 }
 
 .billboard-text{
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 350px;
+    top: 350px;
 }
 
 .billboad-img{
     position: absolute;
-    right: 0;
+    right: 150px;
+    height: 730px;
 }
 
 /* line-container */
@@ -434,6 +459,7 @@ h2{
 .line-img{
     position: absolute;
     left: 230px;
+    height: 2610px;
 }
 
 
@@ -445,20 +471,21 @@ h2{
 }
 
 .pd-para{
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 300;
 }
 
 .door-hanger .pd-para{
     position: absolute;
-    left: 250px;
-    top: 670px;
+    left: 240px;
+    top: 570px;
 }
 
 .door-hanger img{
     position: absolute;
     left: 200px;
     top: 120px;
+    height: 550px;
 }
 
 /* newspaper-ad */
@@ -470,13 +497,15 @@ h2{
 
 .newspaper-ad .pd-para{
     position: absolute;
-    top: 170px;
-    right: 280px;
+    top: 180px;
+    right: 340px;
 }
 
 .newspaper-ad img{
     position: absolute;
+    top: 100px;
     right: 40px;
+    height: 675px;
 }
 
 /* Horizontal-flyer */
@@ -495,6 +524,7 @@ h2{
 .Horizontal-flyer img{
     position: absolute;
     top: -120px;
+    height: 530px;
 }
 
 /* vertical-flyer */
@@ -508,8 +538,14 @@ h2{
 
 .vertical-flyer .pd-para{
     position: absolute;
-    top: 20px;
-    left: 660px;
+    top: 160px;
+    left: 710px;
+}
+
+.vertical-flyer img{
+    position: absolute;
+    top: 150px;
+    height: 527px;
 }
 
 /* bobcat-container */

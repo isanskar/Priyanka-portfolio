@@ -20,3 +20,5 @@ window.onscroll = ()=>{
         goToTop.style.display = "none";
     }
 };
+
+alert('Site is only compatible for desktop view (NOTE: Mobile view is under development)')
