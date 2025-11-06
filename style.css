@@ -438,6 +438,11 @@ h2{
     position: relative;
 }
 
+#half-a-border-on-bottom {
+  border-bottom: 1.5px solid;
+  border-image: linear-gradient(to left, #000 56%, transparent 50%) 100% 1;
+}
+
 .billboard-text{
     position: absolute;
     left: 350px;
