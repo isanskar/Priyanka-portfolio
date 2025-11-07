@@ -95,6 +95,7 @@
     height: 388.87px;
     top: 2860px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .comp2img img{
@@ -130,6 +131,7 @@
     width: 980.86px;
     left: 230px;
     top: 3495px;
+    z-index: 0;
 }
 
 /* Component 3 */
@@ -192,10 +194,15 @@
     left: 0;
     height: 100px;
     width: 100vw;
-    padding: 0 60px;
+    padding: 8rem 6rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 5300px;
+    top: 5042px;
+}
+
+.bobcat-footer-errors p{
+    font-size: 14px;
+    font-weight: 300;
 }
 
