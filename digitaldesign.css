@@ -636,12 +636,18 @@ h2{
     height: 100px;
     width: 100vw;
     padding: 0 60px;
+    padding: 8rem 6rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 5900px;
+    top: 5707px;
     /* bottom: 0; */
+}
+
+.bobcat-footer-error p{
+    font-size: 14px;
+    font-weight: 300;
 }
 
 
